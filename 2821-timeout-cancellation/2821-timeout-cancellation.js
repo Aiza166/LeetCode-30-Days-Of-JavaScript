@@ -5,15 +5,11 @@
  * @return {Function}
  */
 var cancellable = function (fn, args, t) {
-    let isCancelled = false;
-    setTimeout(() => {
-        if (!isCancelled)
-            fn(...args);
+    var timer = setTimeout (() => {
+        fn (...args)
     }, t);
 
-    return () => {
-        isCancelled = true;
-    };
+    return () => clearTimeout (timer);
 };
 
 /**
