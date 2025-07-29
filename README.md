@@ -28,18 +28,20 @@ This repository is a collection of my daily LeetCode problem solutions, solved i
 ## 📝 Example
 
 ```javascript
-// 1. Two Sum
-// Approach: Hash Map for O(n) solution
-var twoSum = function(nums, target) {
-    const map = {};
-    for (let i = 0; i < nums.length; i++) {
-        const complement = target - nums[i];
-        if (map[complement] !== undefined) {
-            return [map[complement], i];
-        }
-        map[nums[i]] = i;
+/**
+ * @return {Function}
+ */
+var createHelloWorld = function() {
+    
+    return function() {
+        return "Hello World";
     }
 };
+
+/**
+ * const f = createHelloWorld();
+ * f(); // "Hello World"
+ */
 ```
 
 ## 🎯 Goals
