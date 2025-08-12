@@ -1,36 +1,63 @@
 class Calculator {
-  constructor(value) {
-    this.result = value;
-  }
-  add(value) {
-    this.result += value;
-    return this;
-  }
-
-  subtract(value) {
-    this.result -= value;
-    return this;
-  }
-
-  multiply(value) {
-    this.result *= value;
-    return this;
-  }
-
-  divide(value) {
-    if (value === 0) {
-      throw new Error('Division by zero is not allowed');
+    
+    /** 
+     * @param {number} value
+     */
+    constructor(value) {
+   
+        this.result = value
     }
-    this.result /= value;
-    return this;
-  }
-
-  power(value) {
-    this.result = Math.pow(this.result, value);
-    return this;
-  }
-
-  getResult() {
-    return this.result;
-  }
+    
+    /** 
+     * @param {number} value
+     * @return {Calculator}
+     */
+    add(value){
+        this.result += value
+        return this
+    }
+    
+    /** 
+     * @param {number} value
+     * @return {Calculator}
+     */
+    subtract(value){
+        this.result -= value
+        return this
+    }
+    
+    /** 
+     * @param {number} value
+     * @return {Calculator}
+     */  
+    multiply(value) {
+        this.result *= value
+        return this
+    }
+    
+    /** 
+     * @param {number} value
+     * @return {Calculator}
+     */
+    divide(value) {
+        if(value === 0) throw "Division by zero is not allowed"
+        this.result = this.result/value
+        return this
+    }
+    
+    /** 
+     * @param {number} value
+     * @return {Calculator}
+     */
+    power(value) {
+        this.result = this.result ** value
+        return this
+    }
+    
+    /** 
+     * @return {number}
+     */
+    getResult() {
+        return this.result
+    }
 }
