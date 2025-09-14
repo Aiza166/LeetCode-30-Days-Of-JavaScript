@@ -61,3 +61,11 @@ For feedback or collaboration, reach out via [GitHub Issues](https://github.com/
 ---
 
 Happy Coding! 🚀
+
+<!---LeetCode Topics Start-->
+# LeetCode Topics
+## Database
+|  |
+| ------- |
+| [1908-recyclable-and-low-fat-products](https://github.com/Aiza166/LeetCode-Solution-Cpp/tree/master/1908-recyclable-and-low-fat-products) |
+<!---LeetCode Topics End-->
